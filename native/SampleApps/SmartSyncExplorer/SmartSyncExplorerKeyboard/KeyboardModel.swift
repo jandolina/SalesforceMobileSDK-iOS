@@ -81,7 +81,7 @@ class KeyboardModel: NSObject {
         
         let dataMgr = SObjectDataManager.init(dataSpec: ContactSObjectData.dataSpec())
         
-        dataMgr?.lastModifiedRecords(Int32(count), completion: { () -> Void in
+        dataMgr?.refreshRemoteData({ () -> Void in
             if let data = dataMgr?.dataRows {
                 completion(data)
             }
