@@ -27,7 +27,8 @@
 static NSString * const kRemoteAccessConsumerKey = @"3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa";
 
 static NSString * const kOAuthRedirectURI = @"testsfdc:///mobilesdk/detect/oauth/done";
-static NSString * const kAppGroupName  = @"group.com.salesforce.mobilesdk.SmartSyncExplorer";
+//static NSString * const kAppGroupName  = @"group.com.salesforce.mobilesdk.SmartSyncExplorer";
+static NSString * const kAppGroupName  = @"group.jandolina.test";
 static NSString * const kUserLoggedIn = @"userLoggedIn";
 
 static SmartSyncExplorerConfig *sharedInstance;
@@ -43,7 +44,7 @@ static SmartSyncExplorerConfig *sharedInstance;
         _oauthRedirectURI = kOAuthRedirectURI;
         _appGroupName = kAppGroupName;
         _userLogInStatusKey = kUserLoggedIn;
-        _appGroupsEnabled = NO;
+        _appGroupsEnabled = YES;
     }
     return self;
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2025327F1E2EFA5A009F32A7 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2025327E1E2EFA5A009F32A7 /* KeyboardViewController.swift */; };
+		202532831E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2025327C1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		202532AC1E2EFA9E009F32A7 /* SmartSyncExplorerCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A134301D99D52600A4559C /* SmartSyncExplorerCommon.framework */; };
+		20C4F4481E3162A900478E20 /* KeyboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4F4471E3162A900478E20 /* KeyboardModel.swift */; };
+		20C4F4691E31779A00478E20 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4F4681E31779A00478E20 /* ContactsViewController.swift */; };
 		4F1DA68E1C84FD7E0014FAD3 /* SmartSyncExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1DA68D1C84FD7E0014FAD3 /* SmartSyncExplorerUITests.swift */; };
 		4F1DA6CD1C84FF3D0014FAD3 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1DA6C01C84FF3D0014FAD3 /* LoginHelper.swift */; };
 		4F1DA6CE1C84FF3D0014FAD3 /* AllowDenyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1DA6C31C84FF3D0014FAD3 /* AllowDenyPage.swift */; };
@@ -81,6 +86,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		202532811E2EFA5A009F32A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 827C630919E6018C00027484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2025327B1E2EFA5A009F32A7;
+			remoteInfo = SmartSyncExplorerKeyboard;
+		};
+		202532AA1E2EFA8A009F32A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 827C630919E6018C00027484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7A1342F1D99D52600A4559C;
+			remoteInfo = SmartSyncExplorerCommon;
+		};
 		4F1DA6901C84FD7E0014FAD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 827C630919E6018C00027484 /* Project object */;
@@ -408,6 +427,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				B7E0CF3E1D91CECE0050A1F4 /* RecentContactsTodayExtension.appex in Embed App Extensions */,
+				202532831E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +435,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2025327C1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmartSyncExplorerKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2025327E1E2EFA5A009F32A7 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		202532801E2EFA5A009F32A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		202532AD1E2EFB2D009F32A7 /* SmartSyncExplorerKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmartSyncExplorerKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		202532AE1E2F0679009F32A7 /* SmartSyncExplorerKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartSyncExplorerKeyboard.entitlements; sourceTree = "<group>"; };
+		20C4F4471E3162A900478E20 /* KeyboardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardModel.swift; sourceTree = "<group>"; };
+		20C4F4681E31779A00478E20 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		4F1DA68B1C84FD7E0014FAD3 /* SmartSyncExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartSyncExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1DA68D1C84FD7E0014FAD3 /* SmartSyncExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSyncExplorerUITests.swift; sourceTree = "<group>"; };
 		4F1DA68F1C84FD7E0014FAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -498,6 +525,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		202532791E2EFA5A009F32A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202532AC1E2EFA9E009F32A7 /* SmartSyncExplorerCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F1DA6881C84FD7E0014FAD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,6 +580,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2025327D1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				20C4F4681E31779A00478E20 /* ContactsViewController.swift */,
+				202532801E2EFA5A009F32A7 /* Info.plist */,
+				20C4F4471E3162A900478E20 /* KeyboardModel.swift */,
+				2025327E1E2EFA5A009F32A7 /* KeyboardViewController.swift */,
+				202532AD1E2EFB2D009F32A7 /* SmartSyncExplorerKeyboard-Bridging-Header.h */,
+				202532AE1E2F0679009F32A7 /* SmartSyncExplorerKeyboard.entitlements */,
+			);
+			path = SmartSyncExplorerKeyboard;
+			sourceTree = "<group>";
+		};
 		4F1DA68C1C84FD7E0014FAD3 /* SmartSyncExplorerUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,6 +707,7 @@
 				4F1DA68C1C84FD7E0014FAD3 /* SmartSyncExplorerUITests */,
 				B7E0CF341D91CECE0050A1F4 /* RecentContactsTodayExtension */,
 				B7A134311D99D52600A4559C /* SmartSyncExplorerCommon */,
+				2025327D1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard */,
 				827C631319E6018C00027484 /* Frameworks */,
 				827C631219E6018C00027484 /* Products */,
 			);
@@ -671,6 +720,7 @@
 				4F1DA68B1C84FD7E0014FAD3 /* SmartSyncExplorerUITests.xctest */,
 				B7E0CF311D91CECE0050A1F4 /* RecentContactsTodayExtension.appex */,
 				B7A134301D99D52600A4559C /* SmartSyncExplorerCommon.framework */,
+				2025327C1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -859,6 +909,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2025327B1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202532A51E2EFA5A009F32A7 /* Build configuration list for PBXNativeTarget "SmartSyncExplorerKeyboard" */;
+			buildPhases = (
+				202532781E2EFA5A009F32A7 /* Sources */,
+				202532791E2EFA5A009F32A7 /* Frameworks */,
+				2025327A1E2EFA5A009F32A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				202532AB1E2EFA8A009F32A7 /* PBXTargetDependency */,
+			);
+			name = SmartSyncExplorerKeyboard;
+			productName = SmartSyncExplorerKeyboard;
+			productReference = 2025327C1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4F1DA68A1C84FD7E0014FAD3 /* SmartSyncExplorerUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F1DA6B51C84FD7E0014FAD3 /* Build configuration list for PBXNativeTarget "SmartSyncExplorerUITests" */;
@@ -898,6 +966,7 @@
 				82D0AC191C49A8120081F833 /* PBXTargetDependency */,
 				B7E0CF3D1D91CECE0050A1F4 /* PBXTargetDependency */,
 				B7A134361D99D52600A4559C /* PBXTargetDependency */,
+				202532821E2EFA5A009F32A7 /* PBXTargetDependency */,
 			);
 			name = SmartSyncExplorer;
 			productName = SmartSyncExplorer;
@@ -947,16 +1016,30 @@
 		827C630919E6018C00027484 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = salesforce.com;
 				TargetAttributes = {
+					2025327B1E2EFA5A009F32A7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4WQ2T93P22;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 					4F1DA68A1C84FD7E0014FAD3 = {
 						CreatedOnToolsVersion = 7.1.1;
 						LastSwiftMigration = 0800;
 						TestTargetID = 827C631019E6018C00027484;
 					};
 					827C631019E6018C00027484 = {
+						DevelopmentTeam = 4WQ2T93P22;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -973,6 +1056,7 @@
 					};
 					B7E0CF301D91CECE0050A1F4 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4WQ2T93P22;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -1024,6 +1108,7 @@
 				4F1DA68A1C84FD7E0014FAD3 /* SmartSyncExplorerUITests */,
 				B7E0CF301D91CECE0050A1F4 /* RecentContactsTodayExtension */,
 				B7A1342F1D99D52600A4559C /* SmartSyncExplorerCommon */,
+				2025327B1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -1256,6 +1341,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2025327A1E2EFA5A009F32A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F1DA6891C84FD7E0014FAD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1293,6 +1385,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		202532781E2EFA5A009F32A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C4F4481E3162A900478E20 /* KeyboardModel.swift in Sources */,
+				2025327F1E2EFA5A009F32A7 /* KeyboardViewController.swift in Sources */,
+				20C4F4691E31779A00478E20 /* ContactsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F1DA6871C84FD7E0014FAD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1357,6 +1459,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		202532821E2EFA5A009F32A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2025327B1E2EFA5A009F32A7 /* SmartSyncExplorerKeyboard */;
+			targetProxy = 202532811E2EFA5A009F32A7 /* PBXContainerItemProxy */;
+		};
+		202532AB1E2EFA8A009F32A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7A1342F1D99D52600A4559C /* SmartSyncExplorerCommon */;
+			targetProxy = 202532AA1E2EFA8A009F32A7 /* PBXContainerItemProxy */;
+		};
 		4F1DA6911C84FD7E0014FAD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 827C631019E6018C00027484 /* SmartSyncExplorer */;
@@ -1442,6 +1554,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		202532841E2EFA5A009F32A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = SmartSyncExplorerKeyboard/SmartSyncExplorerKeyboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4WQ2T93P22;
+				INFOPLIST_FILE = SmartSyncExplorerKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf1.mobilesdk.SmartSyncExplorer.SmartSyncExplorerKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartSyncExplorerKeyboard/SmartSyncExplorerKeyboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		202532851E2EFA5A009F32A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = SmartSyncExplorerKeyboard/SmartSyncExplorerKeyboard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4WQ2T93P22;
+				INFOPLIST_FILE = SmartSyncExplorerKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf1.mobilesdk.SmartSyncExplorer.SmartSyncExplorerKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartSyncExplorerKeyboard/SmartSyncExplorerKeyboard-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		4F1DA6921C84FD7E0014FAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1585,15 +1742,19 @@
 		827C634719E6018C00027484 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SmartSyncExplorer/SmartSyncExplorer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4WQ2T93P22;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartSyncExplorer/SmartSyncExplorer-Prefix.pch";
 				INFOPLIST_FILE = "SmartSyncExplorer/SmartSyncExplorer-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.mobilesdk.SmartSyncExplorer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf1.mobilesdk.SmartSyncExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1602,15 +1763,19 @@
 		827C634819E6018C00027484 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SmartSyncExplorer/SmartSyncExplorer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4WQ2T93P22;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartSyncExplorer/SmartSyncExplorer-Prefix.pch";
 				INFOPLIST_FILE = "SmartSyncExplorer/SmartSyncExplorer-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.mobilesdk.SmartSyncExplorer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf1.mobilesdk.SmartSyncExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1676,12 +1841,14 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_ENTITLEMENTS = RecentContactsTodayExtension/RecentContactsTodayExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4WQ2T93P22;
 				INFOPLIST_FILE = RecentContactsTodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.mobilesdk.SmartSyncExplorer.RecentContactsTodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf1.mobilesdk.SmartSyncExplorer.RecentContactsTodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1694,13 +1861,15 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_ENTITLEMENTS = RecentContactsTodayExtension/RecentContactsTodayExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4WQ2T93P22;
 				INFOPLIST_FILE = RecentContactsTodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.mobilesdk.SmartSyncExplorer.RecentContactsTodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf1.mobilesdk.SmartSyncExplorer.RecentContactsTodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1709,6 +1878,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		202532A51E2EFA5A009F32A7 /* Build configuration list for PBXNativeTarget "SmartSyncExplorerKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202532841E2EFA5A009F32A7 /* Debug */,
+				202532851E2EFA5A009F32A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4F1DA6B51C84FD7E0014FAD3 /* Build configuration list for PBXNativeTarget "SmartSyncExplorerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

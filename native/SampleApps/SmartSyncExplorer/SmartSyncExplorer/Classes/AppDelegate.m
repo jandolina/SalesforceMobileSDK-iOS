@@ -64,7 +64,7 @@
             [SFLogger sharedLogger].logLevel = SFLogLevelInfo;
         #endif
         SmartSyncExplorerConfig *config = [SmartSyncExplorerConfig sharedInstance];
-        [SFSDKDatasharingHelper sharedInstance].appGroupName = config.appGroupName;
+        [SFSDKDatasharingHelper sharedInstance].appGroupName =  config.appGroupName;
         [SFSDKDatasharingHelper sharedInstance].appGroupEnabled = config.appGroupsEnabled;
         [SalesforceSDKManager setInstanceClass:[SalesforceSDKManagerWithSmartStore class]];
         
